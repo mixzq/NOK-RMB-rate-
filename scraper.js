@@ -23,7 +23,7 @@ async function scrape() {
 
   client
     .send({
-      to: "mixzq@outlook.com",
+      to: process.env.MY_SECRET_EMAIL,
       from: process.env.MY_SECRET_EMAIL,
       subject: "今日汇率",
       html: `${rate}`,
